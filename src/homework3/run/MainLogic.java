@@ -18,9 +18,11 @@ public class MainLogic {
 
     public static byte getTaskNumber() {
         System.out.print("Select task number: ");
+
         String choice = Input.getString();
         char firstCharacter = choice.charAt(0);
-        if (firstCharacter >= 48 && firstCharacter <= 53) {
+
+        if (choice.length() == 1 && firstCharacter >= 48 && firstCharacter <= 53) {
             return (byte) Integer.parseInt(choice);
         } else {
             return -1;

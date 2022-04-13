@@ -6,7 +6,7 @@ public class TaskFiveLogic {
 
     //Basic array of names
     public static String[] arrayOfNames = new String[]{"Илья", "Никита", "Диана", "Слава", "Матвей", "Лиза",
-            "Ваня", "Артём"};
+            "Ваня", "Артём", "Настя", "Катя", "Денис"};
 
     //converting an array to a collection to create a map of names. You can add names here
     public static List<String> listOfNames = new ArrayList<>(Arrays.asList(arrayOfNames));
