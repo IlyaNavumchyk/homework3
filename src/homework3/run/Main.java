@@ -7,8 +7,10 @@ import homework3.tasklogic.task3.CompleteTaskThree;
 import homework3.tasklogic.task4.CompleteTaskFour;
 import homework3.tasklogic.task5.CompleteTaskFive;
 
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         boolean run = true;
         while (run) {
@@ -45,7 +47,7 @@ public class Main {
             }
             if (numberOfTask != 0) {
                 System.out.print("\nPress ENTER to continue...");
-                Input.getString();
+                System.in.read();
             }
         }
         Input.input.close();

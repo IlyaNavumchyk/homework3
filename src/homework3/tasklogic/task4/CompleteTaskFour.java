@@ -19,8 +19,10 @@ public class CompleteTaskFour {
         System.out.println("Start TreeSet");
         ShowCollections.showCollection(students);
 
+        TaskFourLogic.getSetOfEvenStudents(students);
+
         System.out.println("Final TreeSet");
-        ShowCollections.showCollection(TaskFourLogic.getSetOfEvenStudents(students));
+        ShowCollections.showCollection(students);
 
         Generator.setId(0);
     }

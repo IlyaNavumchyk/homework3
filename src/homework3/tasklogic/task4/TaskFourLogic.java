@@ -20,7 +20,7 @@ public class TaskFourLogic {
         return students;
     }
 
-    public static TreeSet<Student> getSetOfEvenStudents(TreeSet<Student> students) {
+    public static void getSetOfEvenStudents(TreeSet<Student> students) {
         Iterator<Student> list = students.iterator();
         int count = 1;
         while (list.hasNext()) {
@@ -30,7 +30,6 @@ public class TaskFourLogic {
             }
             count++;
         }
-        return students;
     }
 
 }
