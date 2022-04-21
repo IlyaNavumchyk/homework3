@@ -1,8 +1,8 @@
 package homework3.tasklogic.task5;
 
 import homework3.commonlogic.Generator;
+import homework3.commonlogic.Input;
 
-import java.util.Scanner;
 import java.util.TreeMap;
 
 public class CompleteTaskFive {
@@ -23,10 +23,13 @@ public class CompleteTaskFive {
         TreeMap<String, User> users = new TreeMap<>(TaskFiveLogic.getMapOfUsers());
 
         int lvl = 5;
-        Scanner input = new Scanner(System.in);
         System.out.print("Enter the username for which we will display a list of friends: ");
-        String name = input.nextLine();
-        TaskFiveLogic.getFriendLvl(new User(name), lvl, users);
+        String name = Input.getString();
+        if (users.containsKey(name)){
+            TaskFiveLogic.getFriendLvl(users.get(name), lvl, users);
+        } else {
+            TaskFiveLogic.getFriendLvl(new User(name), lvl, users);
+        }
 
         Generator.setId(0);
     }
